@@ -1,0 +1,15 @@
+.navbarIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 82px;
+  padding: 28px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.navbarIcon.activeTab {
+  background: var(--theme-gradient-start);
+  background: linear-gradient(180deg, var(--theme-gradient-start) 0%, var(--theme-gradient-end) 70%);
+}

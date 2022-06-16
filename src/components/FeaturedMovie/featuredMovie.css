@@ -1,0 +1,67 @@
+.featuredMovie {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.featuredMovie .movieInfo {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+}
+
+.featuredMovieVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.featuredMovieVideo>video {
+  object-fit: cover;
+}
+
+.featuredMovie .movieInfo>h3 {
+  font-family: 'Tajawal bold', sans-serif !important;
+  font-size: 24px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.movieTitle {
+  position: relative;
+  max-width: 680px;
+  width: 680px;
+  height: 84px;
+}
+
+.movieTitle>img {
+  position: absolute;
+  object-fit: contain;
+}
+
+.moviesOtherDetails {
+  display: flex;
+  margin: 18px 0 15px;
+}
+
+.moviesOtherDetails>p {
+  display: flex;
+  color: var(--theme-light);
+  font-size: 30px;
+  margin: 0 18px 0 0;
+}
+
+.moviesOtherDetails>p:last-child {
+  margin: 0;
+}
+
+.movieDescription {
+  font-size: 32px;
+  margin: 0;
+  color: var(--theme-light);
+}

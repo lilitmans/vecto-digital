@@ -1,0 +1,124 @@
+.navContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  width: 0;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.navContainer::before {
+  position: fixed;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: linear-gradient(90deg, var(--theme-dark) 15%, transparent 85%);
+  animation: shadowContainer .5s linear;
+}
+
+@keyframes shadowContainer {
+  0% {
+    background-image: transparent;
+  }
+
+  100% {
+    background-image: linear-gradient(90deg, var(--theme-dark) 15%, transparent 85%);
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  background: transparent;
+  min-height: 100vh;
+}
+
+nav:hover {
+  width: 350px;
+  animation: openNav .2s linear;
+}
+
+@keyframes openNav {
+  0% {
+    width: 150px;
+  }
+
+  100% {
+    width: 350px;
+  }
+}
+
+.loggedUserInfoContainer {
+  visibility: hidden;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 58px;
+  padding: 0 34px;
+  height: 82px;
+  width: 100%;
+
+}
+
+.loggedUserInfoContainer>.imageContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  background-color: var(--theme-accent);
+}
+
+.loggedUserInfoContainer>.imageContainer>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loggedUserInfoContainer>p {
+  font-family: 'Tajawal Bold', sans-serif !important;
+  font-size: 32px;
+  color: var(--theme-light);
+  margin: 0;
+}
+
+nav>ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 34px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+nav>ul>.navbarSubItem {
+  visibility: hidden;
+  font-family: 'Tajawal Bold', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-left: 28px;
+  white-space: nowrap;
+}
+
+nav>ul>.navbarSubItem:last-child {
+  margin-bottom: 56px;
+}
+
+nav>ul>.navbarSubItem.visible {
+  visibility: visible;
+}
+
+nav>ul>.navbarSubItem>a {
+  text-decoration: none;
+  color: var(--text-gray);
+}

@@ -1,0 +1,17 @@
+.moviesCarouselContainer {
+  width: 100%;
+  height: 296px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.moviesCarouselContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.moviesCarousel {
+  display: flex;
+  height: 100%;
+  width: fit-content;
+}

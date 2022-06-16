@@ -1,0 +1,31 @@
+.buttonContainer {
+  display: flex;
+  margin-top: 25px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tajwal Bold', sans-serif !important;
+  font-size: 32px;
+  width: 240px;
+  padding: 11px 11px 18px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.button:nth-child(odd) {
+  margin-right: 18px;
+}
+
+.button.light {
+  background-color: var(--theme-light);
+  color: var(--theme-dark);
+}
+
+.button.dark {
+  background: var(--theme-gradient-start);
+  background: linear-gradient(90deg, var(--theme-gradient-start) 0%, var(--theme-gradient-end) 100%);
+  color: var(--theme-light);
+}

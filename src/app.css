@@ -1,0 +1,45 @@
+@import url('./fonts/fonts.css');
+
+body {
+  font-family: 'Tajawal Regular', sans-serif !important;
+}
+
+:root {
+  --theme-dark: #040404;
+  --theme-dark-80: #040404cc;
+  --theme-dark-40: #04040466;
+  --theme-light: #F1F1F1;
+  --theme-accent: #3B486D;
+  --theme-gradient-start: #2727F5;
+  --theme-gradient-end: #001671;
+  --text-gray: #858688;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--theme-accent);
+}
+
+.app {
+  max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 1920px;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  height: 100%;
+}
+
+.contentNoFitNavbar {
+  margin-left: 150px;
+}

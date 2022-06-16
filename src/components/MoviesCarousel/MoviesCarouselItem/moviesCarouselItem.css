@@ -1,0 +1,16 @@
+.moviesCarouselItem {
+  position: relative;
+  color: white;
+  margin-right: 16px;
+  min-width: 200px;
+  white-space: nowrap;
+  background-color: var(--theme-light);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.moviesCarouselItem>img {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+}

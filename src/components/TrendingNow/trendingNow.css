@@ -1,0 +1,13 @@
+.trendingNow {
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+  width: calc(100% - 150px);
+}
+
+.trendingNow .title {
+  font-family: 'Tajawal Medium', sans-serif !important;
+  font-size: 32px;
+  color: var(--theme-light);
+  margin: 0 0 15px;
+}
